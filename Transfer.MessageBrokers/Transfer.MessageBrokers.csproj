@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.MessageBrokers</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.MessageBrokers</AssemblyName>
+    <Title>Transfer.MessageBrokers</Title>
+    <PackageId>Transfer.MessageBrokers</PackageId>
+    <PackageTags>Transfer.MessageBrokers</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
