@@ -3,31 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31423.177
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToddTransfer", "ToddTransfer\ToddTransfer.csproj", "{4DB69547-C668-42E4-86F2-0B53314FDA60}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transfer.CQRS.Queries", "Transfer.CQRS.Queries\Transfer.CQRS.Queries.csproj", "{DA5A6962-B14C-44A3-B5B5-DBABAEE14855}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transfer", "Transfer\Transfer.csproj", "{3765402E-7F2A-4A23-AE5C-C5755292B3F3}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transfer.Persistence.Lock", "Transfer.CQRS.Lock\Transfer.Persistence.Lock.csproj", "{24B2DA7C-BDE0-43CC-A176-9FDB0B4284E5}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortAlgorithm", "SortAlgorithm\SortAlgorithm.csproj", "{E6D29B6D-B6B3-4873-A7AC-8D36A01F350E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToddTransfer2", "ToddTransfer2\ToddTransfer2.csproj", "{D46CFCFB-BCB0-4808-B18B-DF0E8B73BDB5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transfer.Auth", "Transfer.Auth\Transfer.Auth.csproj", "{2B18F1CD-5377-4C90-8415-22532D48F5F0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transfer.MessageBrokers", "Transfer.MessageBrokers\Transfer.MessageBrokers.csproj", "{4D8ADD76-BB90-4215-A41D-5DA6683BE048}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transfer.MessageBrokers.RabbitMQ", "Transfer.MessageBrokers.RabbitMQ\Transfer.MessageBrokers.RabbitMQ.csproj", "{D7ECF8A3-C1C0-460F-AE5E-D77AA29882B6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedProgram", "AdvancedProgram\AdvancedProgram.csproj", "{0434626B-FD1B-4A07-B1AC-9074DAD7B21F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todd.OcelotApiGateway", "Todd.ApiGateway\Todd.OcelotApiGateway.csproj", "{774AD5BB-C662-4272-AC10-447AA4234DB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todd.OcelotApiGateway", "Todd.ApiGateway\Todd.OcelotApiGateway.csproj", "{774AD5BB-C662-4272-AC10-447AA4234DB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityDemo", "Transfer.Identity\IdentityDemo.csproj", "{545D7934-16B4-4DF1-8E3B-C608B486297C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultithreadingDemo", "MultithreadingDemo\MultithreadingDemo.csproj", "{0B8BB858-92C0-4EEA-A18F-016A0FBE7EA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityClienDemo", "IdentityClienDemo\IdentityClienDemo.csproj", "{2D209764-97C0-4CDD-A602-8BDAF7921008}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mianshi", "mianshi", "{B9824605-87F2-499C-A56A-76CF7A3A9D9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToddRateLimiter", "ReatLimiter\ToddRateLimiter.csproj", "{5B916B1C-A2EC-4067-BE46-28E833A8FF76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,22 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4DB69547-C668-42E4-86F2-0B53314FDA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4DB69547-C668-42E4-86F2-0B53314FDA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4DB69547-C668-42E4-86F2-0B53314FDA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4DB69547-C668-42E4-86F2-0B53314FDA60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA5A6962-B14C-44A3-B5B5-DBABAEE14855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA5A6962-B14C-44A3-B5B5-DBABAEE14855}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA5A6962-B14C-44A3-B5B5-DBABAEE14855}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA5A6962-B14C-44A3-B5B5-DBABAEE14855}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3765402E-7F2A-4A23-AE5C-C5755292B3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3765402E-7F2A-4A23-AE5C-C5755292B3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3765402E-7F2A-4A23-AE5C-C5755292B3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3765402E-7F2A-4A23-AE5C-C5755292B3F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{24B2DA7C-BDE0-43CC-A176-9FDB0B4284E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24B2DA7C-BDE0-43CC-A176-9FDB0B4284E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24B2DA7C-BDE0-43CC-A176-9FDB0B4284E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24B2DA7C-BDE0-43CC-A176-9FDB0B4284E5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E6D29B6D-B6B3-4873-A7AC-8D36A01F350E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E6D29B6D-B6B3-4873-A7AC-8D36A01F350E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6D29B6D-B6B3-4873-A7AC-8D36A01F350E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -59,18 +31,6 @@ Global
 		{D46CFCFB-BCB0-4808-B18B-DF0E8B73BDB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D46CFCFB-BCB0-4808-B18B-DF0E8B73BDB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D46CFCFB-BCB0-4808-B18B-DF0E8B73BDB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B18F1CD-5377-4C90-8415-22532D48F5F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B18F1CD-5377-4C90-8415-22532D48F5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B18F1CD-5377-4C90-8415-22532D48F5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B18F1CD-5377-4C90-8415-22532D48F5F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D8ADD76-BB90-4215-A41D-5DA6683BE048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D8ADD76-BB90-4215-A41D-5DA6683BE048}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D8ADD76-BB90-4215-A41D-5DA6683BE048}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D8ADD76-BB90-4215-A41D-5DA6683BE048}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D7ECF8A3-C1C0-460F-AE5E-D77AA29882B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7ECF8A3-C1C0-460F-AE5E-D77AA29882B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7ECF8A3-C1C0-460F-AE5E-D77AA29882B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7ECF8A3-C1C0-460F-AE5E-D77AA29882B6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0434626B-FD1B-4A07-B1AC-9074DAD7B21F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0434626B-FD1B-4A07-B1AC-9074DAD7B21F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0434626B-FD1B-4A07-B1AC-9074DAD7B21F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -79,17 +39,20 @@ Global
 		{774AD5BB-C662-4272-AC10-447AA4234DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{774AD5BB-C662-4272-AC10-447AA4234DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{774AD5BB-C662-4272-AC10-447AA4234DB9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{545D7934-16B4-4DF1-8E3B-C608B486297C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{545D7934-16B4-4DF1-8E3B-C608B486297C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{545D7934-16B4-4DF1-8E3B-C608B486297C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{545D7934-16B4-4DF1-8E3B-C608B486297C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2D209764-97C0-4CDD-A602-8BDAF7921008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D209764-97C0-4CDD-A602-8BDAF7921008}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D209764-97C0-4CDD-A602-8BDAF7921008}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D209764-97C0-4CDD-A602-8BDAF7921008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B8BB858-92C0-4EEA-A18F-016A0FBE7EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B8BB858-92C0-4EEA-A18F-016A0FBE7EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B8BB858-92C0-4EEA-A18F-016A0FBE7EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B8BB858-92C0-4EEA-A18F-016A0FBE7EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B916B1C-A2EC-4067-BE46-28E833A8FF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B916B1C-A2EC-4067-BE46-28E833A8FF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B916B1C-A2EC-4067-BE46-28E833A8FF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B916B1C-A2EC-4067-BE46-28E833A8FF76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B916B1C-A2EC-4067-BE46-28E833A8FF76} = {B9824605-87F2-499C-A56A-76CF7A3A9D9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBBDD0B8-5DBA-4B63-AA09-7496837BAC54}
