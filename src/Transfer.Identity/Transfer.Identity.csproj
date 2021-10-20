@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'"> 
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\win7-x64\ChatBotApi.XML</DocumentationFile>
+</PropertyGroup> 
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> 
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\win7-x64\ChatBotApi.XML</DocumentationFile> 
+</PropertyGroup>
+<Target Name="PrepublishScript" BeforeTargets="PrepareForPublish"> 
+    <ItemGroup> 
+        <DocFile Include="bin\$(Platform)\$(Configuration)\$(TargetFramework)\win7-x64\*.xml" /> 
+   </ItemGroup> 
+   <Copy SourceFiles="@(DocFile)" DestinationFolder="$(PublishDir)" SkipUnchangedFiles="false" />
+</Target>
+</Project>
