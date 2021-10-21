@@ -82,8 +82,8 @@ namespace Transfer.Auth
                     certificate = hasPassword
                         ? new X509Certificate2(options.Certificate.Location, password)
                         : new X509Certificate2(options.Certificate.Location);
-                    var keyType = certificate.HasPrivateKey ? "with private key" : "with public key only";
-                    Console.WriteLine($"Loaded X.509 certificate from location: '{options.Certificate.Location}' {keyType}.");
+                    var keyType = certificate.HasPrivateKey ? "使用私钥" : "仅使用公钥";
+                    Console.WriteLine($"Loaded X.509 来自本地的证书: '{options.Certificate.Location}' {keyType}.");
                 }
                 
                 if (!string.IsNullOrWhiteSpace(options.Certificate.RawData))
@@ -92,8 +92,8 @@ namespace Transfer.Auth
                     certificate = hasPassword
                         ? new X509Certificate2(rawData, password)
                         : new X509Certificate2(rawData);
-                    var keyType = certificate.HasPrivateKey ? "with private key" : "with public key only";
-                    Console.WriteLine($"Loaded X.509 certificate from raw data {keyType}.");
+                    var keyType = certificate.HasPrivateKey ? "使用私钥" : "仅使用公钥";
+                    Console.WriteLine($"Loaded X.509 来自原始数据的证书 {keyType}.");
                 }
 
                 if (certificate is {})
@@ -105,8 +105,8 @@ namespace Transfer.Auth
 
                     hasCertificate = true;
                     tokenValidationParameters.IssuerSigningKey = new X509SecurityKey(certificate);
-                    var actionType = certificate.HasPrivateKey ? "issuing" : "validating";
-                    Console.WriteLine($"Using X.509 certificate for {actionType} tokens.");
+                    var actionType = certificate.HasPrivateKey ? "发行" : "验证";
+                    Console.WriteLine($"使用 X.509 证书  {actionType} tokens.");
                 }
             }
 
@@ -119,7 +119,7 @@ namespace Transfer.Auth
 
                 var rawKey = Encoding.UTF8.GetBytes(options.IssuerSigningKey);
                 tokenValidationParameters.IssuerSigningKey = new SymmetricSecurityKey(rawKey);
-                Console.WriteLine("Using symmetric encryption for issuing tokens.");
+                Console.WriteLine("使用对称加密来颁发令牌.");
             }
 
             if (!string.IsNullOrWhiteSpace(options.NameClaimType))

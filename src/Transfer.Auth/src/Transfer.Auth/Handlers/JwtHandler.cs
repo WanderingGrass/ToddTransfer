@@ -33,12 +33,12 @@ namespace Transfer.Auth.Handlers
             var issuerSigningKey = tokenValidationParameters.IssuerSigningKey;
             if (issuerSigningKey is null)
             {
-                throw new InvalidOperationException("Issuer signing key not set.");
+                throw new InvalidOperationException("未设置颁发者签名密钥.");
             }
 
             if (string.IsNullOrWhiteSpace(options.Algorithm))
             {
-                throw new InvalidOperationException("Security algorithm not set.");
+                throw new InvalidOperationException("未设置安全算法.");
             }
 
             _options = options;
@@ -52,7 +52,7 @@ namespace Transfer.Auth.Handlers
         {
             if (string.IsNullOrWhiteSpace(userId))
             {
-                throw new ArgumentException("User ID claim (subject) cannot be empty.", nameof(userId));
+                throw new ArgumentException("User ID claim (subject) 不能为空.", nameof(userId));
             }
 
             var now = DateTime.UtcNow;

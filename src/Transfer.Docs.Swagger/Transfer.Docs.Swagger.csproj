@@ -1,27 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Transfer.Docs.Swagger</Description>
-    <Authors>Todd</Authors>
-    <LangVersion>Latest</LangVersion>
     <TargetFramework>net6.0</TargetFramework>
-    <Title>Transfer.Docs.Swagger</Title>
-    <PackageId>Transfer.Docs.Swagger</PackageId>
-    <PackageTags>Transfer.Docs.Swagger</PackageTags>
     <Nullable>enable</Nullable>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>bin\Release\Transfer.Docs.Swagger.xml</DocumentationFile>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <SignAssembly>True</SignAssembly>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Transfer.Docs.Swagger</PackageId>
+    <Authors>Todd</Authors>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <NeutralLanguage>zh-CHS</NeutralLanguage>
+    <AssemblyVersion>$(VersionMain)</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="index.html" />
+    <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.3" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" Version="6.2.3" />
+    <ProjectReference Include="..\Transfer\Transfer.csproj" />
   </ItemGroup>
 
 </Project>

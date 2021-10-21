@@ -17,8 +17,12 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
+    /// <summary>
+    /// /这是一个get
+    /// </summary>
+    /// <returns></returns>
     [HttpGet]
-    public IEnumerable<WeatherForecast> Get()
+    public IEnumerable<WeatherForecast> Get([FromQuery]string s)
     {
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
