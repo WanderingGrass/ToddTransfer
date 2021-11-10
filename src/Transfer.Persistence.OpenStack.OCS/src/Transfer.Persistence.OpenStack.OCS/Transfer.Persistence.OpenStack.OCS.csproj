@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.Persistence.OpenStack.OCS</Description>
+    <Authors>Patryk Ciebień</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.Persistence.OpenStack.OCS</AssemblyName>
+    <Title>Transfer.Persistence.OpenStack.OCS</Title>
+    <PackageId>Transfer.Persistence.OpenStack.OCS</PackageId>
+    <PackageTags>Transfer.Persistence.OpenStack.OCS</PackageTags>
+    <Company>CyberityMotion</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer\src\Transfer\Transfer.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.WebApi.CQRS</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.WebApi.CQRS</AssemblyName>
+    <Title>Transfer.WebApi.CQRS</Title>
+    <PackageId>Transfer.WebApi.CQRS</PackageId>
+    <PackageTags>Transfer.WebApi.CQRS</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer.CQRS.Commands\src\Transfer.CQRS.Commands\Transfer.CQRS.Commands.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.CQRS.Events\src\Transfer.CQRS.Events\Transfer.CQRS.Events.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.CQRS.Queries\src\Transfer.CQRS.Queries\Transfer.CQRS.Queries.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.WebApi\src\Transfer.WebApi\Transfer.WebApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>

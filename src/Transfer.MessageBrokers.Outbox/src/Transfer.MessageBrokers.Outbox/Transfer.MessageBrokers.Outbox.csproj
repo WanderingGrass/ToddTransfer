@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.MessageBrokers.Outbox</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.MessageBrokers.Outbox</AssemblyName>
+    <Title>Transfer.MessageBrokers.Outbox</Title>
+    <PackageId>Transfer.MessageBrokers.Outbox</PackageId>
+    <PackageTags>Transfer.MessageBrokers.Outbox</PackageTags>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer\src\Transfer\Transfer.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.MessageBrokers\src\Transfer.MessageBrokers\Transfer.MessageBrokers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+  
+</Project>

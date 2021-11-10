@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.HTTP.RestEase</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.HTTP.RestEase</AssemblyName>
+    <Title>Transfer.HTTP.RestEase</Title>
+    <PackageId>Transfer.HTTP.RestEase</PackageId>
+    <PackageTags>Transfer.HTTP.RestEase</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer\src\Transfer\Transfer.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.HTTP\src\Transfer.HTTP\Transfer.HTTP.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.Discovery.Consul\src\Transfer.Discovery.Consul\Transfer.Discovery.Consul.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.LoadBalancing.Fabio\src\Transfer.LoadBalancing.Fabio\Transfer.LoadBalancing.Fabio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestEase" Version="1.5.5" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+</Project>

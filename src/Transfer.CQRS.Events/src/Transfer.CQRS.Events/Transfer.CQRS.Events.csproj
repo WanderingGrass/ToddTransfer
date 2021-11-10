@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.CQRS.Events</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.CQRS.Events</AssemblyName>
+    <Title>Transfer.CQRS.Events</Title>
+    <PackageId>Transfer.CQRS.Events</PackageId>
+    <PackageTags>Transfer.CQRS.Events</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer\src\Transfer\Transfer.csproj" />
+  </ItemGroup>
+  
+</Project>

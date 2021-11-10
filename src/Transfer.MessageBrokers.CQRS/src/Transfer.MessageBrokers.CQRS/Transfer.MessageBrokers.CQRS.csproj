@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.MessageBrokers.CQRS</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.MessageBrokers.CQRS</AssemblyName>
+    <Title>Transfer.MessageBrokers.CQRS</Title>
+    <PackageId>Transfer.MessageBrokers.CQRS</PackageId>
+    <PackageTags>Transfer.MessageBrokers.CQRS</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer.MessageBrokers\src\Transfer.MessageBrokers\Transfer.MessageBrokers.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.CQRS.Commands\src\Transfer.CQRS.Commands\Transfer.CQRS.Commands.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.CQRS.Events\src\Transfer.CQRS.Events\Transfer.CQRS.Events.csproj" />
+  </ItemGroup>
+  
+</Project>

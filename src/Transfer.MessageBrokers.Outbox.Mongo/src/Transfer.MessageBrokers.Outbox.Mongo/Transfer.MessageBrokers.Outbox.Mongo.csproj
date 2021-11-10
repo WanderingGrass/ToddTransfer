@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.MessageBrokers.Outbox.Mongo</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.MessageBrokers.Outbox.Mongo</AssemblyName>
+    <Title>Transfer.MessageBrokers.Outbox.Mongo</Title>
+    <PackageId>Transfer.MessageBrokers.Outbox.Mongo</PackageId>
+    <PackageTags>Transfer.MessageBrokers.Outbox.Mongo</PackageTags>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer.MessageBrokers.Outbox\src\Transfer.MessageBrokers.Outbox\Transfer.MessageBrokers.Outbox.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.Persistence.MongoDB\src\Transfer.Persistence.MongoDB\Transfer.Persistence.MongoDB.csproj" />
+  </ItemGroup>
+
+</Project>

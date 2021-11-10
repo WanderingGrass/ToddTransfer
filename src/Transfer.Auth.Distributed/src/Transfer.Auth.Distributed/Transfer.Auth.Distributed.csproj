@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.Auth.Distributed</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.Auth.Distributed</AssemblyName>
+    <Title>Transfer.Auth.Distributed</Title>
+    <PackageId>Transfer.Auth.Distributed</PackageId>
+    <PackageTags>Transfer.Auth.Distributed</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer.Auth\src\Transfer.Auth\Transfer.Auth.csproj" />
+  </ItemGroup>
+
+</Project>

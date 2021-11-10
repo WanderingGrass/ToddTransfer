@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.WebApi</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.WebApi</AssemblyName>
+    <Title>Transfer.WebApi</Title>
+    <PackageId>Transfer.WebApi</PackageId>
+    <PackageTags>Transfer.WebApi</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer\src\Transfer\Transfer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Open.Serialization.Json.Newtonsoft" Version="2.3.1" />
+    <PackageReference Include="Open.Serialization.Json.System" Version="2.3.2" />
+    <PackageReference Include="Open.Serialization.Json.Utf8Json" Version="2.3.1" />
+  </ItemGroup>
+
+</Project>

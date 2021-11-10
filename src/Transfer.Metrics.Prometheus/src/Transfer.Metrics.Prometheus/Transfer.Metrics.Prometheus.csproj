@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>Transfer.Metrics.Prometheus</Description>
+        <Authors>DevMentors.io</Authors>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>Latest</LangVersion>
+        <AssemblyName>Transfer.Metrics.Prometheus</AssemblyName>
+        <Title>Transfer.Metrics.Prometheus</Title>
+        <PackageId>Transfer.Metrics.Prometheus</PackageId>
+        <PackageTags>Transfer.Metrics.Prometheus</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\Transfer\src\Transfer\Transfer.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="prometheus-net" Version="5.0.1" />
+      <PackageReference Include="prometheus-net.AspNetCore" Version="5.0.1" />
+      <PackageReference Include="prometheus-net.AspNetCore.Grpc" Version="5.0.1" />
+      <PackageReference Include="prometheus-net.AspNetCore.HealthChecks" Version="5.0.1" />
+      <PackageReference Include="prometheus-net.DotNetRuntime" Version="4.2.2" />
+      <PackageReference Include="prometheus-net.SystemMetrics" Version="2.0.0" />
+    </ItemGroup>
+
+</Project>

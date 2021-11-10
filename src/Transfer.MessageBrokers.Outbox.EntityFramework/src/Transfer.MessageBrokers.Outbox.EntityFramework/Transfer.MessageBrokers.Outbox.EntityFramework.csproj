@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.MessageBrokers.Outbox.EntityFramework</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <Title>Transfer.MessageBrokers.Outbox.EntityFrameworkF</Title>
+    <PackageId>Transfer.MessageBrokers.Outbox.EntityFramework</PackageId>
+    <PackageTags>Transfer.MessageBrokers.Outbox.EntityFramework</PackageTags>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer.MessageBrokers.Outbox\src\Transfer.MessageBrokers.Outbox\Transfer.MessageBrokers.Outbox.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
+  </ItemGroup>
+
+</Project>

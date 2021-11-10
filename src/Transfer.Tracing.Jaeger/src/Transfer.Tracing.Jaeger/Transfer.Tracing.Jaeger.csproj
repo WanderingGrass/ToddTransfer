@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.Tracing.Jaeger</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.Tracing.Jaeger</AssemblyName>
+    <Title>Transfer.Tracing.Jaeger</Title>
+    <PackageId>Transfer.Tracing.Jaeger</PackageId>
+    <PackageTags>Transfer.Tracing.Jaeger</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer\src\Transfer\Transfer.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Jaeger" Version="1.0.3" />
+    <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.7.1" />
+  </ItemGroup>
+
+
+</Project>

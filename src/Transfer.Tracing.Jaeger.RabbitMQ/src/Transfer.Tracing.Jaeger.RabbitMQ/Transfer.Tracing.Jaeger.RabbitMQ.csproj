@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.Tracing.Jaeger.RabbitMQ</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.Tracing.Jaeger.RabbitMQ</AssemblyName>
+    <Title>Transfer.Tracing.Jaeger.RabbitMQ</Title>
+    <PackageId>Transfer.Tracing.Jaeger.RabbitMQ</PackageId>
+    <PackageTags>Transfer.Tracing.Jaeger.RabbitMQ</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer.MessageBrokers.RabbitMQ\src\Transfer.MessageBrokers.RabbitMQ\Transfer.MessageBrokers.RabbitMQ.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.Tracing.Jaeger\src\Transfer.Tracing.Jaeger\Transfer.Tracing.Jaeger.csproj" />
+  </ItemGroup>
+
+</Project>

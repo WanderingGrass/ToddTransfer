@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.Persistence.MongoDB</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.Persistence.MongoDB</AssemblyName>
+    <Title>Transfer.Persistence.MongoDB</Title>
+    <PackageId>Transfer.Persistence.MongoDB</PackageId>
+    <PackageTags>Transfer.Persistence.MongoDB</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer\src\Transfer\Transfer.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.CQRS.Queries\src\Transfer.CQRS.Queries\Transfer.CQRS.Queries.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.13.2" />
+  </ItemGroup>
+</Project>

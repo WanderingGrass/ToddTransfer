@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer\src\Transfer\Transfer.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.Logging\src\Transfer.Logging\Transfer.Logging.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.CQRS.Commands\src\Transfer.CQRS.Commands\Transfer.CQRS.Commands.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.CQRS.Events\src\Transfer.CQRS.Events\Transfer.CQRS.Events.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.CQRS.Queries\src\Transfer.CQRS.Queries\Transfer.CQRS.Queries.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SmartFormat.NET" Version="2.7.1" />
+  </ItemGroup>
+
+</Project>

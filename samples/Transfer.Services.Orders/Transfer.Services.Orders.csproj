@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Transfer.Discovery.Consul\src\Transfer.Discovery.Consul\Transfer.Discovery.Consul.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.Docs.Swagger\src\Transfer.Docs.Swagger\Transfer.Docs.Swagger.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.HTTP\src\Transfer.HTTP\Transfer.HTTP.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.LoadBalancing.Fabio\src\Transfer.LoadBalancing.Fabio\Transfer.LoadBalancing.Fabio.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.Logging\src\Transfer.Logging\Transfer.Logging.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.MessageBrokers.CQRS\src\Transfer.MessageBrokers.CQRS\Transfer.MessageBrokers.CQRS.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.MessageBrokers.Outbox.Mongo\src\Transfer.MessageBrokers.Outbox.Mongo\Transfer.MessageBrokers.Outbox.Mongo.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.MessageBrokers.Outbox\src\Transfer.MessageBrokers.Outbox\Transfer.MessageBrokers.Outbox.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.MessageBrokers.RabbitMQ\src\Transfer.MessageBrokers.RabbitMQ\Transfer.MessageBrokers.RabbitMQ.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.Metrics.AppMetrics\src\Transfer.Metrics.AppMetrics\Transfer.Metrics.AppMetrics.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.Metrics.Prometheus\src\Transfer.Metrics.Prometheus\Transfer.Metrics.Prometheus.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.Persistence.MongoDB\src\Transfer.Persistence.MongoDB\Transfer.Persistence.MongoDB.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.Persistence.Redis\src\Transfer.Persistence.Redis\Transfer.Persistence.Redis.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.Secrets.Vault\src\Transfer.Secrets.Vault\Transfer.Secrets.Vault.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.Tracing.Jaeger.RabbitMQ\src\Transfer.Tracing.Jaeger.RabbitMQ\Transfer.Tracing.Jaeger.RabbitMQ.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.Tracing.Jaeger\src\Transfer.Tracing.Jaeger\Transfer.Tracing.Jaeger.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.WebApi.CQRS\src\Transfer.WebApi.CQRS\Transfer.WebApi.CQRS.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.WebApi.Security\src\Transfer.WebApi.Security\Transfer.WebApi.Security.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.WebApi.Swagger\src\Transfer.WebApi.Swagger\Transfer.WebApi.Swagger.csproj" />
+    <ProjectReference Include="..\..\src\Transfer.WebApi\src\Transfer.WebApi\Transfer.WebApi.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Transfer.MessageBrokers\src\Transfer.MessageBrokers\Transfer.MessageBrokers.csproj" />
-    <ProjectReference Include="..\..\..\Transfer\Transfer.csproj" />
+    <ProjectReference Include="..\..\..\Transfer\src\Transfer\Transfer.csproj" />
   </ItemGroup>
 
 
@@ -15,6 +15,6 @@
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
     <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
-    <PackageReference Include="Polly" Version="7.2.1" />
+    <PackageReference Include="Polly" Version="7.2.2" />
   </ItemGroup>
 </Project>

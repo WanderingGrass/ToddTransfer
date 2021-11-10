@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transfer.WebApi.Swagger</Description>
+    <Authors>DevMentors.io</Authors>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Transfer.WebApi.Swagger</AssemblyName>
+    <Title>Transfer.WebApi.Swagger</Title>
+    <PackageId>Transfer.WebApi.Swagger</PackageId>
+    <PackageTags>Transfer.WebApi.Swagger</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Transfer.WebApi\src\Transfer.WebApi\Transfer.WebApi.csproj" />
+    <ProjectReference Include="..\..\..\Transfer.Docs.Swagger\src\Transfer.Docs.Swagger\Transfer.Docs.Swagger.csproj" />
+  </ItemGroup>
+  
+</Project>
