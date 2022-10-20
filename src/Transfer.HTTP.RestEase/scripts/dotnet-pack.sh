@@ -3,7 +3,7 @@ echo Executing after success scripts on branch $TRAVIS_BRANCH
 echo Triggering Nuget package build
 
 cd src/Transfer.HTTP.RestEase/src/Transfer.HTTP.RestEase
-dotnet pack -c release /p:PackageVersion=0.5.$TRAVIS_BUILD_NUMBER --no-restore -o .
+dotnet pack -c release /p:PackageVersion=1.0.$TRAVIS_BUILD_NUMBER --no-restore -o .
 
 echo Uploading Transfer.HTTP.RestEase package to Nuget using branch $TRAVIS_BRANCH
 

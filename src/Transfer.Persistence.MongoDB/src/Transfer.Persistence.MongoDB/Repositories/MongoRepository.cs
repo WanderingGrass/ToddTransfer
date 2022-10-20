@@ -12,6 +12,7 @@ namespace Transfer.Persistence.MongoDB.Repositories
 	internal class MongoRepository<TEntity, TIdentifiable> : IMongoRepository<TEntity, TIdentifiable>
 		where TEntity : IIdentifiable<TIdentifiable>
 	{
+	
 		public MongoRepository(IMongoDatabase database, string collectionName)
 		{
 			Collection = database.GetCollection<TEntity>(collectionName);

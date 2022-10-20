@@ -5,6 +5,7 @@ using Transfer.Types;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using SmartFormat;
+using System.Threading;
 
 namespace Transfer.Logging.CQRS.Decorators
 {
@@ -25,20 +26,20 @@ namespace Transfer.Logging.CQRS.Decorators
                       new EmptyMessageToLogTemplateMapper();
         }
 
-        public async Task HandleAsync(TCommand command)
+        public async Task HandleAsync(TCommand command, CancellationToken cancellationToken = default)
         {
             var template = _mapper.Map(command);
 
             if (template is null)
             {
-                await _handler.HandleAsync(command);
+                await _handler.HandleAsync(command, cancellationToken);
                 return;
             }
 
             try
             {
                 Log(command, template.Before);
-                await _handler.HandleAsync(command);
+                await _handler.HandleAsync(command, cancellationToken);
                 Log(command, template.After);
             }
             catch (Exception ex)

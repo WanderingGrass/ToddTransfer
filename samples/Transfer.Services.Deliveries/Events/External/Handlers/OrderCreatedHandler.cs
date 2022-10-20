@@ -1,11 +1,13 @@
 using System;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Transfer.CQRS.Events;
 using Transfer.MessageBrokers;
 using Transfer.MessageBrokers.RabbitMQ;
 using Microsoft.Extensions.Logging;
 using OpenTracing;
+using System.Threading;
 
 namespace Transferor.Services.Deliveries.Events.External.Handlers
 {
@@ -29,7 +31,7 @@ namespace Transferor.Services.Deliveries.Events.External.Handlers
                 : rabbitMqOptions.SpanContextHeader;
         }
 
-        public Task HandleAsync(OrderCreated @event)
+        public Task HandleAsync(OrderCreated @event, CancellationToken cancellationToken = default)
         {
             _logger.LogInformation($"Received 'order created' event with order id: {@event.OrderId}");
             var deliveryId = Guid.NewGuid();

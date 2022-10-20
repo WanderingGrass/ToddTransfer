@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Transfer.CQRS.Queries;
 using Transfer.Persistence.MongoDB;
@@ -16,7 +17,7 @@ namespace Transferor.Services.Orders.Queries.Handlers
             _repository = repository;
         }
 
-        public async Task<OrderDto> HandleAsync(GetOrder query)
+        public async Task<OrderDto> HandleAsync(GetOrder query, CancellationToken cancellationToken = default)
         {
             var order = await _repository.GetAsync(query.OrderId);
 

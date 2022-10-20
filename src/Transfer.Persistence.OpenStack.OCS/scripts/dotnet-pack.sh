@@ -3,7 +3,7 @@ echo Executing after success scripts on branch $TRAVIS_BRANCH
 echo Triggering Nuget package build
 
 cd src/Transfer.Persistence.OpenStack.OCS/src/Transfer.Persistence.OpenStack.OCS
-dotnet pack -c release /p:PackageVersion=0.5.$TRAVIS_BUILD_NUMBER --no-restore -o .
+dotnet pack -c release /p:PackageVersion=1.0.$TRAVIS_BUILD_NUMBER --no-restore -o .
 
 echo Uploading Transfer.Persistence.OpenStack.OCS package to Nuget using branch $TRAVIS_BRANCH
 

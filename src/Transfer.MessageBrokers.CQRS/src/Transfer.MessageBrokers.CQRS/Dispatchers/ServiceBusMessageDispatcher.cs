@@ -1,3 +1,4 @@
+using System.Threading;
 using System.Threading.Tasks;
 using Transfer.CQRS.Commands;
 using Transfer.CQRS.Events;
@@ -15,10 +16,10 @@ namespace Transfer.MessageBrokers.CQRS.Dispatchers
             _accessor = accessor;
         }
 
-        public Task SendAsync<T>(T command) where T : class, ICommand
+        public Task SendAsync<T>(T command,CancellationToken cancellationToken = default) where T : class, ICommand
             => _busPublisher.SendAsync(command, _accessor.CorrelationContext);
 
-        public Task PublishAsync<T>(T @event) where T : class, IEvent
+        public Task PublishAsync<T>(T @event, CancellationToken cancellationToken = default) where T : class, IEvent
             => _busPublisher.PublishAsync(@event, _accessor.CorrelationContext);
     }
 }

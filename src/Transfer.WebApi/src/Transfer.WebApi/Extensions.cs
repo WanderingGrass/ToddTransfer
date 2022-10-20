@@ -22,6 +22,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
+using Microsoft.Extensions.Logging;
 using Open.Serialization.Json;
 
 namespace Transfer.WebApi
@@ -287,8 +288,10 @@ namespace Transfer.WebApi
 
         public static async Task<T> ReadJsonAsync<T>(this HttpContext httpContext)
         {
+            var logger = httpContext.RequestServices.GetService<ILogger>();
             if (httpContext.Request.Body is null)
             {
+                logger?.LogError("Null request body received.");
                 httpContext.Response.StatusCode = 400;
                 await httpContext.Response.Body.WriteAsync(InvalidJsonRequestBytes, 0, InvalidJsonRequestBytes.Length);
 
@@ -330,8 +333,9 @@ namespace Transfer.WebApi
 
                 return default;
             }
-            catch
+            catch (Exception ex)
             {
+                logger?.LogError(ex, "Exception thrown while deserializing request.");
                 httpContext.Response.StatusCode = 400;
                 await httpContext.Response.Body.WriteAsync(InvalidJsonRequestBytes, 0, InvalidJsonRequestBytes.Length);
 

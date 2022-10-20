@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using Transfer.CQRS.Events;
 using Microsoft.Extensions.Logging;
+using System.Threading;
 
 namespace Transferor.Services.Orders.Events.External.Handlers
 {
@@ -13,7 +14,7 @@ namespace Transferor.Services.Orders.Events.External.Handlers
             _logger = logger;
         }
 
-        public Task HandleAsync(DeliveryStarted @event)
+        public Task HandleAsync(DeliveryStarted @event, CancellationToken cancellationToken = default)
         {
             _logger.LogInformation($"Received 'delivery started' event with delivery id: {@event.DeliveryId}");
             return Task.CompletedTask;

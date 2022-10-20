@@ -9,6 +9,7 @@ using Transferor.Services.Orders.Events;
 using Transferor.Services.Orders.Services;
 using Microsoft.Extensions.Logging;
 using OpenTracing;
+using System.Threading;
 
 namespace Transferor.Services.Orders.Commands.Handlers
 {
@@ -33,7 +34,7 @@ namespace Transferor.Services.Orders.Commands.Handlers
             _logger = logger;
         }
 
-        public async Task HandleAsync(CreateOrder command)
+        public async Task HandleAsync(CreateOrder command, CancellationToken cancellationToken = default)
         {
             var exists = await _repository.ExistsAsync(o => o.Id == command.OrderId);
             if (exists)
